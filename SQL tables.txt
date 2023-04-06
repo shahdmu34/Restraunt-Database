@@ -419,3 +419,111 @@ INSERT INTO Daily_sales VALUES (343, 'Ann Arbor', '2022-06-22', 5600.00);
 INSERT INTO Daily_sales VALUES (765, 'Dearborn', '2022-06-22',4000.00);
 
 INSERT INTO Daily_sales VALUES (082, 'Detroit', '2022-06-22', 3800.00);
+
+-----------------------------------------------------------------------------
+SQL STATEMENTS
+-----------------------------------------------------------------------------
+
+Fetching the first and last name of staff members at the Ann Arbor location. 
+
+SELECT Fname, Lname 
+FROM Staff
+WHERE location = ‘Ann Arbor’
+
+--------------------------------------------------------------------------
+
+Fetching the first and last name of Staff members whose position is head chef.
+
+SELECT Fname, Lname
+FROM Staff, Cooks
+WHERE Staff.EmpNum = Cooks.EmpNum AND cookPosition = ‘Head Chef’
+
+----------------------------------------------------------------------------
+
+Retrieve the name and price of all in-stock menu items
+
+SELECT name, price
+FROM Menu
+WHERE inven_status = ‘In-Stock’
+
+
+----------------------------------------------------------------------------
+
+Retrieve the orderId, order data and total for the customer Kaz Brekker.
+
+SELECT Orders.OrderID, OrderDate, Orders.Total
+FROM  Orders, Customer
+WHERE Customer.OrderID = Orders.OrderID AND Customer.Fname = 'Kaz' AND Customer.Lname = 'Brekker'
+
+----------------------------------------------------------------------------------------------------
+
+For each customer, retrieve the party size, table and location.
+
+SELECT partySize, rest_table, location
+FROM Customer, Reservation
+WHERE Customer.R_Num = Reservation.Reservation_Num 
+GROUP BY partySize, rest_table, location
+
+--------------------------------------------------------------------------------------------
+
+Retrieve the average salary of all Staff members at the Dearborn location
+
+SELECT AVG(salary)
+FROM Staff
+WHERE EXISTS(
+	SELECT *
+	FROM Locations
+WHERE Staff.Location = Locations.Location AND Locations.Location = 'Dearborn' );
+
+---------------------------------------------------------------------------------------------------
+
+Retrieve the number of available tables at the Ann Arbor location.
+
+SELECT COUNT(*)
+FROM Rest_Tables
+WHERE Availability = 'available' AND location = 'Ann Arbor'
+
+--------------------------------------------------------------------------------------------------
+
+Retrieve the number of staff at the Detroit location
+
+SELECT count(*)
+FROM Staff
+WHERE location = 'Detroit'
+
+------------------------------------------------------------------------------------------
+
+Retrieve OrderID, customerID and order date of all orders that are in progress.
+
+SELECT OrderID,CustomerID , OrderDate
+FROM Orders
+WHERE Status = 'In Progress'
+
+----------------------------------------------------------------------------------
+
+Insert a new menu item <154,  ‘Cheese cake', 'yes', 4.99, 'In-Stock'> 
+
+//done
+
+INSERT INTO Menu VALUES( 154,  ‘Cheese cake’, 'yes', 4.99, 'In-Stock');
+
+
+-------------------------------------------------------------------------------
+
+Update water stock under Inventory
+
+//done
+
+UPDATE Inventory SET Count_Detroit = 403 Count_Dearborn = 300, Count_AnnArbor = 201 WHERE Name = ‘Water’;
+
+----------------------------------------------------------------------------------
+
+Delete the inventory item ‘Onions’ and whose item id is 455.
+
+//done
+
+DELETE FROM Inventory
+WHERE name = ‘Onions’ AND itemID = 455
+
+
+

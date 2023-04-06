@@ -1,0 +1,420 @@
+CREATE TABLE Customer(
+CustomerId INT PRIMARY KEY,
+Fname VARCHAR(30),
+Minitial VARCHAR(1),
+Lname VARCHAR(30),
+R_Num INT,
+OrderID INT);
+
+
+//done
+
+INSERT INTO Customers(CustomerId, Fname, Minitial, Lname, ReservationNum, OrderId) Values (34, 'John', 'J', 'Smith', 321, 8789);
+INSERT INTO Customers(CustomerId, Fname, Minitial, Lname, ReservationNum, OrderId) Values (23, 'Bang', 'C', 'Han', 123, 9876);
+INSERT INTO Customers(CustomerId, Fname, Minitial, Lname, ReservationNum, OrderId) Values (12, 'Mika', 'S', 'End', 456, 0987);
+INSERT INTO Customers(CustomerId, Fname, Minitial, Lname, ReservationNum, OrderId) Values (45, 'Alice', 'B', 'Johnson', 789, 2345);
+INSERT INTO Customers(CustomerId, Fname, Minitial, Lname, ReservationNum, OrderId) Values (67, 'David', 'L', 'Kim', 555, 9087);
+INSERT INTO Customers(CustomerId, Fname, Minitial, Lname, ReservationNum, OrderId) Values (89, 'Emily', 'K', 'Lee', 222, 7654);
+INSERT INTO Customers(CustomerId, Fname, Minitial, Lname, ReservationNum, OrderId) Values (33, 'Jake', 'T', 'Chen', 445, 3456);
+INSERT INTO Customers(CustomerId, Fname, Minitial, Lname, ReservationNum, OrderId) Values (55, 'Finnick', 'H', 'Odair', 667, 0123);
+INSERT INTO Customers(CustomerId, Fname, Minitial, Lname, ReservationNum, OrderId) Values (77, 'Kaz', 'S', 'Brekker', 688, 7800);
+INSERT INTO Customers(CustomerId, Fname, Minitial, Lname, ReservationNum, OrderId) Values (98, 'Inej', 'J', 'Ghafa', 336, 5678);
+
+-------------------------------------------------------------------------------
+CREATE TABLE Staff(
+Fname VARCHAR(50),
+Minitial VARCHAR(1),
+Lname VARCHAR(50),
+SSN INT,
+EmpNum INT PRIMARY KEY,
+Salary FLOAT,
+Birthday DATE,
+Position VARCHAR(30),
+Location VARCHAR(30),
+DateOfEmployement DATE)
+);
+
+//done
+
+
+INSERT INTO Staff(Fname, Minitial, Lname, SSN, EmpNum, Salary, Birthday, Position, Location, DateOfEmployement) Values ('Mary', 'D', 'Ann', '2238', '5681', '800.00', TO_DATE(''1987-07-12 20:37:33', 'YYYY-MM-DD HH24:MI:SS'), 'Manager', 'Dearborn', TO_DATE('2018-05-02 20:38:37', 'YYYY-MM-DD HH24:MI:SS'))
+
+INSERT INTO Staff(Fname, Minitial, Lname, SSN, EmpNum, Salary, Birthday, Position, Location, DateOfEmployement) Values ('Loid', 'F', 'Forger', '3367', '1298', '900.00', TO_DATE('1987-04-21 20:37:33', 'YYYY-MM-DD HH24:MI:SS'), 'Manager', 'Dearborn', TO_DATE('2015-02-15 20:38:37', 'YYYY-MM-DD HH24:MI:SS'))
+
+INSERT INTO Staff(Fname, Minitial, Lname, SSN, EmpNum, Salary, Birthday, Position, Location, DateOfEmployement) Values ('Noe', 'V ', 'Archiviste', '4425', '7032', '1000.00', TO_DATE('1990-06-05 20:37:33', 'YYYY-MM-DD HH24:MI:SS'), 'Manager', 'Detroit', TO_DATE('2017-09-01 20:38:37', 'YYYY-MM-DD HH24:MI:SS'))
+
+
+INSERT INTO Staff(Fname, Minitial, Lname, SSN, EmpNum, Salary, Birthday, Position, Location, DateOfEmployement) Values ('Elena', 'K', 'Lee', '2356', '4466', '500.00', TO_DATE('1995-04-11 20:37:33', 'YYYY-MM-DD HH24:MI:SS'), 'Waiter', 'Dearborn', TO_DATE('2019-08-18 20:38:37', 'YYYY-MM-DD HH24:MI:SS'))
+
+
+
+INSERT INTO Staff(Fname, Minitial, Lname, SSN, EmpNum, Salary, Birthday, Position, Location, DateOfEmployement) Values ('Felix', 'Y', 'Pace', '1122', '0325', '900.00', TO_DATE('2000-09-15 20:37:33', 'YYYY-MM-DD HH24:MI:SS'), 'Cook', 'Ann Arbor', TO_DATE('2020-03-15 20:38:37', 'YYYY-MM-DD HH24:MI:SS'))
+
+
+
+INSERT INTO Staff(Fname, Minitial, Lname, SSN, EmpNum, Salary, Birthday, Position, Location, DateOfEmployement) Values ('Sophie', 'H', 'Parker', '7887', '8976', '300.00', TO_DATE('1992-05-01 20:37:33', 'YYYY-MM-DD HH24:MI:SS'), 'Waiter', 'Detroit', TO_DATE('2022-02-13 20:38:37', 'YYYY-MM-DD HH24:MI:SS'))
+
+
+
+INSERT INTO Staff(Fname, Minitial, Lname, SSN, EmpNum, Salary, Birthday, Position, Location, DateOfEmployement) Values ('Howl', 'F', 'Pret', '6655', '1111', '450.00', TO_DATE('1982-11-21 20:37:33', 'YYYY-MM-DD HH24:MI:SS'), 'Cook', 'Ann Arbor', TO_DATE('2018-07-01 20:38:37', 'YYYY-MM-DD HH24:MI:SS'))
+
+
+
+INSERT INTO Staff(Fname, Minitial, Lname, SSN, EmpNum, Salary, Birthday, Position, Location, DateOfEmployement) Values ('Mamba', 'B', 'Aespa', '2244', '3333', '500.00', TO_DATE('1992-02-14 20:37:33', 'YYYY-MM-DD HH24:MI:SS'), 'Cook', 'Detroit', TO_DATE('2019-03-15 20:38:37', 'YYYY-MM-DD HH24:MI:SS'))
+
+
+
+INSERT INTO Staff(Fname, Minitial, Lname, SSN, EmpNum, Salary, Birthday, Position, Location, DateOfEmployement) Values ('Momo', 'C', 'Twice', '8898', '2234', '700.00', TO_DATE('1998-04-01 20:37:33', 'YYYY-MM-DD HH24:MI:SS'), 'Cook', 'Dearborn', TO_DATE('2019-05-10 20:38:37', 'YYYY-MM-DD HH24:MI:SS'))
+
+
+
+INSERT INTO Staff(Fname, Minitial, Lname, SSN, EmpNum, Salary, Birthday, Position, Location, DateOfEmployement) Values ('William', 'M', 'Moriarty', '2938', '1283', '700.00', TO_DATE('1997-03-02 20:37:33', 'YYYY-MM-DD HH24:MI:SS'), 'Cook', 'Ann Arbor', TO_DATE('2020-04-01 20:38:37', 'YYYY-MM-DD HH24:MI:SS'))
+
+
+INSERT INTO Staff(Fname, Minitial, Lname, SSN, EmpNum, Salary, Birthday, Position, Location, DateOfEmployement) Values ('Francis', 'S', 'Fitzgerald', '2738', '8721', '900.00', TO_DATE('1998-05-11 20:37:33', 'YYYY-MM-DD HH24:MI:SS'), 'Cook', 'Dearborn', TO_DATE('2019–03-12 20:38:37', 'YYYY-MM-DD HH24:MI:SS'))
+
+
+INSERT INTO Staff(Fname, Minitial, Lname, SSN, EmpNum, Salary, Birthday, Position, Location, DateOfEmployement) Values ('Sasha', 'A', 'Braus', '0923', '0192', '560.00', TO_DATE('1995-06-13 20:37:33', 'YYYY-MM-DD HH24:MI:SS'), 'Cook', 'Dearborn', TO_DATE('2022-04-01 20:38:37', 'YYYY-MM-DD HH24:MI:SS'))
+
+INSERT INTO Staff(Fname, Minitial, Lname, SSN, EmpNum, Salary, Birthday, Position, Location, DateOfEmployement) Values ('Nana', 'O', 'Osaki', '3901', '3920', '600.00', TO_DATE('1997-03-12 20:37:33', 'YYYY-MM-DD HH24:MI:SS'), 'Cook', 'Detroit', TO_DATE('2019-04-13 20:38:37', 'YYYY-MM-DD HH24:MI:SS'))
+
+
+INSERT INTO Staff(Fname, Minitial, Lname, SSN, EmpNum, Salary, Birthday, Position, Location, DateOfEmployement) Values ('Miroh', 'D', 'Levy', '2092', '2304', '500.00', TO_DATE('1998-10-02 20:37:33', 'YYYY-MM-DD HH24:MI:SS'), 'Cook', 'Detroit', TO_DATE('2018-07-19 20:38:37', 'YYYY-MM-DD HH24:MI:SS'))
+
+
+
+INSERT INTO Staff(Fname, Minitial, Lname, SSN, EmpNum, Salary, Birthday, Position, Location, DateOfEmployement) Values ('Yuta', 'F', 'Okkotsu', '8372', '1920', '600.00', TO_DATE('1992-08-11 20:37:33', 'YYYY-MM-DD HH24:MI:SS'), 'Waiter', 'Ann Arbor', TO_DATE('2019-06-11 20:38:37', 'YYYY-MM-DD HH24:MI:SS'))
+
+
+INSERT INTO Staff(Fname, Minitial, Lname, SSN, EmpNum, Salary, Birthday, Position, Location, DateOfEmployement) Values ('Howl', 'F', 'Pret', '6655', '1111', '450.00', TO_DATE('1982-11-21 20:37:33', 'YYYY-MM-DD HH24:MI:SS'), 'Cook', 'Ann Arbor', TO_DATE('2018-07-01 20:38:37', 'YYYY-MM-DD HH24:MI:SS'))
+
+
+
+INSERT INTO Staff(Fname, Minitial, Lname, SSN, EmpNum, Salary, Birthday, Position, Location, DateOfEmployement) Values ('Mamba', 'B', 'Aespa', '2244', '3333', '500.00', TO_DATE('1992-02-14 20:37:33', 'YYYY-MM-DD HH24:MI:SS'), 'Cook', 'Detroit', TO_DATE('2019-03-15 20:38:37', 'YYYY-MM-DD HH24:MI:SS'))
+
+
+
+INSERT INTO Staff(Fname, Minitial, Lname, SSN, EmpNum, Salary, Birthday, Position, Location, DateOfEmployement) Values ('Momo', 'C', 'Twice', '8898', '2234', '700.00', TO_DATE('1998-04-01 20:37:33', 'YYYY-MM-DD HH24:MI:SS'), 'Cook', 'Dearborn', TO_DATE('2019-05-10 20:38:37', 'YYYY-MM-DD HH24:MI:SS'))
+
+
+
+INSERT INTO Staff(Fname, Minitial, Lname, SSN, EmpNum, Salary, Birthday, Position, Location, DateOfEmployement) Values ('William', 'M', 'Moriarty', '2938', '1283', '700.00', TO_DATE('1997-03-02 20:37:33', 'YYYY-MM-DD HH24:MI:SS'), 'Cook', 'Ann Arbor', TO_DATE('2020-04-01 20:38:37', 'YYYY-MM-DD HH24:MI:SS'))
+
+
+INSERT INTO Staff(Fname, Minitial, Lname, SSN, EmpNum, Salary, Birthday, Position, Location, DateOfEmployement) Values ('Francis', 'S', 'Fitzgerald', '2738', '8721', '900.00', TO_DATE('1998-05-11 20:37:33', 'YYYY-MM-DD HH24:MI:SS'), 'Cook', 'Dearborn', TO_DATE('2019–03-12 20:38:37', 'YYYY-MM-DD HH24:MI:SS'))
+
+
+INSERT INTO Staff(Fname, Minitial, Lname, SSN, EmpNum, Salary, Birthday, Position, Location, DateOfEmployement) Values ('Sasha', 'A', 'Braus', '0923', '0192', '560.00', TO_DATE('1995-06-13 20:37:33', 'YYYY-MM-DD HH24:MI:SS'), 'Cook', 'Dearborn', TO_DATE('2022-04-01 20:38:37', 'YYYY-MM-DD HH24:MI:SS'))
+
+INSERT INTO Staff(Fname, Minitial, Lname, SSN, EmpNum, Salary, Birthday, Position, Location, DateOfEmployement) Values ('Nana', 'O', 'Osaki', '3901', '3920', '600.00', TO_DATE('1997-03-12 20:37:33', 'YYYY-MM-DD HH24:MI:SS'), 'Cook', 'Detroit', TO_DATE('2019-04-13 20:38:37', 'YYYY-MM-DD HH24:MI:SS'))
+
+
+INSERT INTO Staff(Fname, Minitial, Lname, SSN, EmpNum, Salary, Birthday, Position, Location, DateOfEmployement) Values ('Miroh', 'D', 'Levy', '2092', '2304', '500.00', TO_DATE('1998-10-02 20:37:33', 'YYYY-MM-DD HH24:MI:SS'), 'Cook', 'Detroit', TO_DATE('2018-07-19 20:38:37', 'YYYY-MM-DD HH24:MI:SS'))
+
+
+
+INSERT INTO Staff(Fname, Minitial, Lname, SSN, EmpNum, Salary, Birthday, Position, Location, DateOfEmployement) Values ('Yuta', 'F', 'Okkotsu', '8372', '1920', '600.00', TO_DATE('1992-08-11 20:37:33', 'YYYY-MM-DD HH24:MI:SS'), 'Waiter', 'Ann Arbor', TO_DATE('2019-06-11 20:38:37', 'YYYY-MM-DD HH24:MI:SS'))
+
+
+INSERT INTO Staff(Fname, Minitial, Lname, SSN, EmpNum, Salary, Birthday, Position, Location, DateOfEmployement) Values ('Howl', 'F', 'Pret', '6655', '1111', '450.00', TO_DATE('1982-11-21 20:37:33', 'YYYY-MM-DD HH24:MI:SS'), 'Cook', 'Ann Arbor', TO_DATE('2018-07-01 20:38:37', 'YYYY-MM-DD HH24:MI:SS'))
+
+
+
+INSERT INTO Staff(Fname, Minitial, Lname, SSN, EmpNum, Salary, Birthday, Position, Location, DateOfEmployement) Values ('Mamba', 'B', 'Aespa', '2244', '3333', '500.00', TO_DATE('1992-02-14 20:37:33', 'YYYY-MM-DD HH24:MI:SS'), 'Cook', 'Detroit', TO_DATE('2019-03-15 20:38:37', 'YYYY-MM-DD HH24:MI:SS'))
+
+
+
+INSERT INTO Staff(Fname, Minitial, Lname, SSN, EmpNum, Salary, Birthday, Position, Location, DateOfEmployement) Values ('Momo', 'C', 'Twice', '8898', '2234', '700.00', TO_DATE('1998-04-01 20:37:33', 'YYYY-MM-DD HH24:MI:SS'), 'Cook', 'Dearborn', TO_DATE('2019-05-10 20:38:37', 'YYYY-MM-DD HH24:MI:SS'))
+
+
+
+INSERT INTO Staff(Fname, Minitial, Lname, SSN, EmpNum, Salary, Birthday, Position, Location, DateOfEmployement) Values ('William', 'M', 'Moriarty', '2938', '1283', '700.00', TO_DATE('1997-03-02 20:37:33', 'YYYY-MM-DD HH24:MI:SS'), 'Cook', 'Ann Arbor', TO_DATE('2020-04-01 20:38:37', 'YYYY-MM-DD HH24:MI:SS'))
+
+
+INSERT INTO Staff(Fname, Minitial, Lname, SSN, EmpNum, Salary, Birthday, Position, Location, DateOfEmployement) Values ('Francis', 'S', 'Fitzgerald', '2738', '8721', '900.00', TO_DATE('1998-05-11 20:37:33', 'YYYY-MM-DD HH24:MI:SS'), 'Cook', 'Dearborn', TO_DATE('2019–03-12 20:38:37', 'YYYY-MM-DD HH24:MI:SS'))
+
+
+INSERT INTO Staff(Fname, Minitial, Lname, SSN, EmpNum, Salary, Birthday, Position, Location, DateOfEmployement) Values ('Sasha', 'A', 'Braus', '0923', '0192', '560.00', TO_DATE('1995-06-13 20:37:33', 'YYYY-MM-DD HH24:MI:SS'), 'Cook', 'Dearborn', TO_DATE('2022-04-01 20:38:37', 'YYYY-MM-DD HH24:MI:SS'))
+
+INSERT INTO Staff(Fname, Minitial, Lname, SSN, EmpNum, Salary, Birthday, Position, Location, DateOfEmployement) Values ('Nana', 'O', 'Osaki', '3901', '3920', '600.00', TO_DATE('1997-03-12 20:37:33', 'YYYY-MM-DD HH24:MI:SS'), 'Cook', 'Detroit', TO_DATE('2019-04-13 20:38:37', 'YYYY-MM-DD HH24:MI:SS'))
+
+
+INSERT INTO Staff(Fname, Minitial, Lname, SSN, EmpNum, Salary, Birthday, Position, Location, DateOfEmployement) Values ('Miroh', 'D', 'Levy', '2092', '2304', '500.00', TO_DATE('1998-10-02 20:37:33', 'YYYY-MM-DD HH24:MI:SS'), 'Cook', 'Detroit', TO_DATE('2018-07-19 20:38:37', 'YYYY-MM-DD HH24:MI:SS'))
+
+
+INSERT INTO Staff(Fname, Minitial, Lname, SSN, EmpNum, Salary, Birthday, Position, Location, DateOfEmployement) Values ('Yuta', 'F', 'Okkotsu', '8372', '1920', '600.00', TO_DATE('1992-08-11 20:37:33', 'YYYY-MM-DD HH24:MI:SS'), 'Waiter', 'Ann Arbor', TO_DATE('2019-06-11 20:38:37', 'YYYY-MM-DD HH24:MI:SS'))
+
+INSERT INTO Staff(Fname, Minitial, Lname, SSN, EmpNum, Salary, Birthday, Position, Location, DateOfEmployement) Values ('Gege', 'D', 'Akutami', '0192', '1988', '600.00', TO_DATE('1998-10-04 20:37:33', 'YYYY-MM-DD HH24:MI:SS'), 'Waiter', 'Ann Arbor', TO_DATE('2018-07-19 20:38:37', 'YYYY-MM-DD HH24:MI:SS'))
+
+INSERT INTO Staff(Fname, Minitial, Lname, SSN, EmpNum, Salary, Birthday, Position, Location, DateOfEmployement) Values ('Mustafa', 'S', 'Ali', '0387', '1972', '600.00', TO_DATE('1996-04-09 20:37:33', 'YYYY-MM-DD HH24:MI:SS'), 'Waiter', 'Ann Arbor', TO_DATE('2019-07-21 20:38:37', 'YYYY-MM-DD HH24:MI:SS'))
+
+
+INSERT INTO Staff(Fname, Minitial, Lname, SSN, EmpNum, Salary, Birthday, Position, Location, DateOfEmployement) Values ('Yuta', 'F', 'Okkotsu', '8372', '1920', '600.00', TO_DATE('1992-08-11 20:37:33', 'YYYY-MM-DD HH24:MI:SS'), 'Waiter', 'Ann Arbor', TO_DATE('2019-06-11 20:38:37', 'YYYY-MM-DD HH24:MI:SS'))
+
+
+INSERT INTO Staff(Fname, Minitial, Lname, SSN, EmpNum, Salary, Birthday, Position, Location, DateOfEmployement) Values ('Yuqi', 'A', 'Idle', '0738', '1928', '600.00', TO_DATE('1998-10-02 20:37:33', 'YYYY-MM-DD HH24:MI:SS'), 'Waiter', 'Ann Arbor', TO_DATE('2021-05-17 20:38:37', 'YYYY-MM-DD HH24:MI:SS'))
+
+
+INSERT INTO Staff(Fname, Minitial, Lname, SSN, EmpNum, Salary, Birthday, Position, Location, DateOfEmployement) Values ('Conan', 'E', 'Gray', '2390', '1092', '600.00', TO_DATE('1998-07-01 20:37:33', 'YYYY-MM-DD HH24:MI:SS'), 'Waiter', 'Dearborn', TO_DATE('2022-08-01 20:38:37', 'YYYY-MM-DD HH24:MI:SS'))
+
+
+INSERT INTO Staff(Fname, Minitial, Lname, SSN, EmpNum, Salary, Birthday, Position, Location, DateOfEmployement) Values ('Vash', 'G', 'Stampede', '3902', '3982', '600.00', TO_DATE('1996-07-12 20:37:33', 'YYYY-MM-DD HH24:MI:SS'), 'Waiter', 'Dearborn', TO_DATE('2021-10-02 20:38:37', 'YYYY-MM-DD HH24:MI:SS'))
+
+
+INSERT INTO Staff(Fname, Minitial, Lname, SSN, EmpNum, Salary, Birthday, Position, Location, DateOfEmployement) Values ('Lu', 'J', 'Fang', '3820', '1997', '600.00', TO_DATE('1998-07-09 20:37:33', 'YYYY-MM-DD HH24:MI:SS'), 'Waiter', 'Detroit', TO_DATE('2021-09-15 20:38:37', 'YYYY-MM-DD HH24:MI:SS'))
+
+
+INSERT INTO Staff(Fname, Minitial, Lname, SSN, EmpNum, Salary, Birthday, Position, Location, DateOfEmployement) Values ('Fyodor', 'Y', 'Vamp', '3204', '1993', '600.00', TO_DATE('1998-02-20 20:37:33', 'YYYY-MM-DD HH24:MI:SS'), 'Waiter', 'Detroit', TO_DATE('2021--02-11 20:38:37', 'YYYY-MM-DD HH24:MI:SS'))
+
+
+--------------------------------------------------------------------------------
+
+
+CREATE TABLE Waiters(
+EmpNum INT PRIMARY KEY,
+Location VARCHAR(50),
+TableNum INT,
+FOREIGN KEY(EmpNum) REFERENCES Staff(EmpNum)
+);
+
+//done
+
+INSERT INTO Waiters(EmpNum, Location, TableNum) VALUES (1920, 'Ann Arbor', 12);
+INSERT INTO Waiters(EmpNum, Location, TableNum) VALUES (1988, 'Ann Arbor', 6);
+INSERT INTO Waiters(EmpNum, Location, TableNum) VALUES (1972, 'Ann Arbor', 11);
+INSERT INTO Waiters(EmpNum, Location, TableNum) VALUES (1928, 'Ann Arbor', 8);
+INSERT INTO Waiters(EmpNum, Location, TableNum) VALUES (4466, 'Dearborn', 1);
+INSERT INTO Waiters(EmpNum, Location, TableNum) VALUES (1092, 'Dearborn', 3);
+INSERT INTO Waiters(EmpNum, Location, TableNum) VALUES (3982, 'Dearborn', 5);
+INSERT INTO Waiters(EmpNum, Location, TableNum) VALUES (8976, 'Detroit', 4);
+INSERT INTO Waiters(EmpNum, Location, TableNum) VALUES (1997, 'Detroit', 7);
+INSERT INTO Waiters(EmpNum, Location, TableNum) VALUES (1993, 'Detroit', 8);
+
+
+--------------------------------------------------------------------------------
+
+CREATE TABLE Cooks(
+EmpNum INT PRIMARY KEY,
+CookPosition VARCHAR(50),
+FOREIGN KEY(EmpNum) REFERENCES Staff(EmpNum)
+
+);
+
+//done
+
+INSERT INTO Cooks(EmpNum, CookPosition) VALUES (1283,'Ann Arbor', 'Line Cook');
+INSERT INTO Cooks(EmpNum, CookPosition) VALUES (1111,'Ann Arbor', 'Sous Chef');
+INSERT INTO Cooks(EmpNum, CookPosition) VALUES (0325,'Ann Arbor', 'Head Chef');
+INSERT INTO Cooks(EmpNum, CookPosition) VALUES (2234,'Dearborn', 'Line Cook');
+INSERT INTO Cooks(EmpNum, CookPosition) VALUES (8721,'Dearborn', 'Sous Chef');
+INSERT INTO Cooks(EmpNum, CookPosition) VALUES (0192,'Dearborn', 'Head Chef');
+INSERT INTO Cooks(EmpNum, CookPosition) VALUES (3333,'Detroit','Line Cook');
+INSERT INTO Cooks(EmpNum, CookPosition) VALUES (3920,'Detroit','Sous Chef');
+INSERT INTO Cooks(EmpNum, CookPosition) VALUES (2304,'Detroit','Head Chef');
+
+
+
+---------------------------------------------------------------------------------
+
+CREATE TABLE Phone(
+EmpNum INT PRIMARY KEY,
+PhoneNum VARCHAR(30),
+
+FOREIGN KEY(EmpNum) REFERENCES Staff(EmpNum)
+
+);
+
+
+//done
+
+INSERT INTO Phone(EmpNum, PhoneNum) VALUES (5681 , '313-206-1645');
+INSERT INTO Phone(EmpNum, PhoneNum) VALUES (1298 , '734-228-0258');
+INSERT INTO Phone(EmpNum, PhoneNum) VALUES (7032 , '248-228-1952');
+INSERT INTO Phone(EmpNum, PhoneNum) VALUES (4466, '313-336-4179');
+INSERT INTO Phone(EmpNum, PhoneNum) VALUES (0325 , '734-249-6853');
+INSERT INTO Phone(EmpNum, PhoneNum) VALUES (8976 , '248-232-9978');
+INSERT INTO Phone(EmpNum, PhoneNum) VALUES (1111, '734-260-1537');
+INSERT INTO Phone(EmpNum, PhoneNum) VALUES (3333 , '248-242-6427');
+INSERT INTO Phone(EmpNum, PhoneNum) VALUES (2234 , '313-337-6146');
+INSERT INTO Phone(EmpNum, PhoneNum) VALUES (1283 , '734-274-0781');
+INSERT INTO Phone(EmpNum, PhoneNum) VALUES (8721 , '313-374-5198');
+INSERT INTO Phone(EmpNum, PhoneNum) VALUES (0192 , '313-390-6909');
+INSERT INTO Phone(EmpNum, PhoneNum) VALUES (3920 , '248-295-9430');
+INSERT INTO Phone(EmpNum, PhoneNum) VALUES (2304 , '248-283-4544');
+INSERT INTO Phone(EmpNum, PhoneNum) VALUES (1920 , '734-249-6853');
+INSERT INTO Phone(EmpNum, PhoneNum) VALUES (1988 , '734-302-0870');
+INSERT INTO Phone(EmpNum, PhoneNum) VALUES (1972 , '734-327-3684');
+INSERT INTO Phone(EmpNum, PhoneNum) VALUES (1928 , '734-358-3747');
+INSERT INTO Phone(EmpNum, PhoneNum) VALUES (1092 , '313-425-9257');
+INSERT INTO Phone(EmpNum, PhoneNum) VALUES (3982 , '313-561-6113');
+INSERT INTO Phone(EmpNum, PhoneNum) VALUES (1997 , '248-319-9055');
+INSERT INTO Phone(EmpNum, PhoneNum) VALUES (1993 , '248-567-3495');
+
+
+-------------------------------------------------------------------------------
+
+CREATE TABLE Locations(
+location VARCHAR(50),
+R_Phone VARCHAR(30),
+RestaurantNum INT PRIMARY KEY
+);
+
+
+INSERT INTO Locations(location, R_Phone, RestaurantNum) VALUES ('Ann Arbor', '734-753-1920', 343);
+
+INSERT INTO Locations(location, R_Phone, RestaurantNum) VALUES ('Dearborn', '313-504-2202', 765);
+
+INSERT INTO Locations(location, R_Phone, RestaurantNum) VALUES ('Detroit', '313-920-4039', 082);
+
+
+---------------------------------------------------------------------------------------
+CREATE TABLE Inventory(
+Name VARCHAR(20) NOT NULL,
+Count_Detroit INT,
+Count_Dearborn INT,
+Count_AnnArbor INT,
+itemID INT PRIMARY KEY NOT NULL);
+
+//done
+
+INSERT INTO Inventory VALUES('Water', 788, 663, 500, 221);
+INSERT INTO Inventory VALUES('Chicken', 304, 203, 506, 301);
+INSERT INTO Inventory VALUES('Tofu', 100, 293, 99, 203);
+INSERT INTO Inventory VALUES('Heavy Cream', 200, 202, 170, 100);
+INSERT INTO Inventory VALUES('Parmesan Cheese', 86, 56, 69, 109);
+INSERT INTO Inventory VALUES('Beef', 203, 405, 304, 129);
+INSERT INTO Inventory VALUES('Butter', 404, 444, 450, 293);
+INSERT INTO Inventory VALUES('Soda', 2040, 1299, 1596, 300);
+INSERT INTO Inventory VALUES('Rice', 50, 39, 55, 299);
+INSERT INTO Inventory VALUES('Pita Bread', 505, 300, 204, 315);
+INSERT INTO Inventory VALUES('Pickles', 90, 79, 59, 506);
+INSERT INTO Inventory VALUES('Onions', 405, 304, 292, 455);
+INSERT INTO Inventory VALUES('Oil', 302, 209, 399, 555);
+INSERT INTO Inventory VALUES('Garlic', 201, 306, 292, 111);
+INSERT INTO Inventory VALUES('Pasta' 1034, 1029, 1849, 309);
+INSERT INTO Inventory VALUES('Lemons', 220, 394, 207, 330);
+
+--------------------------------------------------------------------
+
+CREATE TABLE Orders(OrderID INT PRIMARY KEY NOT NULL,
+OrderDate VARCHAR(10),
+CustomerID INT,
+Status VARCHAR(15),
+Total INT);
+
+//done
+
+INSERT INTO Orders VALUES(8789, '06-22-2022', 34, 'Complete', 0.99);
+INSERT INTO Orders VALUES(9876, '03-04-2022', 23, 'In Progress', 92.02);
+INSERT INTO Orders VALUES(0987, '06-04-2022', 12, 'Complete', 30.00);
+INSERT INTO Orders VALUES(2345, '03-21-2022', 45, 'Canceled', 12.57);
+INSERT INTO Orders VALUES(9087, '01-04-2022', 67, 'In Progress', 180.30);
+INSERT INTO Orders VALUES(7654, '12-03-2022', 89, 'Complete', 25.55);
+INSERT INTO Orders VALUES(3456, '06-11-2022', 33, 'Complete', 25.55);
+INSERT INTO Orders VALUES(0123, '03-04-2022', 55, 'In Progress', 7.99);
+INSERT INTO Orders VALUES(7800, '12-05-2022', 77, 'Complete', 100.00);
+INSERT INTO Orders VALUES(5678, '11-03-2022', 98, 'In Progress', 36.90);
+
+------------------------------------------------------------------------
+
+CREATE TABLE Manager(
+EmpNum INT PRIMARY KEY,
+Location VARCHAR(50),
+FOREIGN KEY (EmpNum) REFERENCES Staff(EmpNum)
+);
+
+//done
+
+INSERT INTO Manager VALUES(5681, 'Dearborn');
+INSERT INTO Manager VALUES(1298, 'Ann Arbor');
+INSERT INTO Manager VALUES(7032, 'Detroit');
+
+-------------------------------------------------------------------------
+
+CREATE TABLE Menu(ItemID# INT PRIMARY KEY NOT NULL,
+Name VARCHAR(20),
+Vegan VARCHAR(3),
+Price INT,
+Inven_Status VARCHAR(15));
+
+//done
+
+INSERT INTO Menu VALUES(221, 'Water', yes, 0.99, 'In-Stock');
+INSERT INTO Menu VALUES(849, 'Alfredo', no, 12.99, 'Out-Of-Stock');
+INSERT INTO Menu VALUES(758, 'Tofu Stir Fry', yes, 12.99, 'In-Stock');
+INSERT INTO Menu VALUES(853, 'Shawarma', no, 8.99, 'In-Stock');
+INSERT INTO Menu VALUES(563, 'Butter Chicken', no, 13.99, 'In-Stock');
+INSERT INTO Menu VALUES(213, 'Soda', yes, 2.99, 'In-Stock);
+
+--------------------------------------------------------------------------------
+
+CREATE TABLE Rest_Tables(
+Num INT PRIMARY KEY NOT NULL,
+Availability VARCHAR (40),
+location VARCHAR(50));
+
+//done
+
+INSERT INTO Rest_Tables VALUES(12, 'not available', 'Ann Arbor');
+INSERT INTO Rest_Tables VALUES(6 , 'available', 'Ann Arbor');
+INSERT INTO Rest_Tables VALUES(11, 'not available', 'Ann Arbor');
+INSERT INTO Rest_Tables VALUES(8, 'available', 'Ann Arbor');
+INSERT INTO Rest_Tables VALUES(1 , 'not available', 'Dearborn');
+INSERT INTO Rest_Tables VALUES(3, 'not available', 'Dearborn');
+INSERT INTO Rest_Tables VALUES(5, 'not available', 'Dearborn');
+INSERT INTO Rest_Tables VALUES(4, 'not available', 'Detroit');
+INSERT INTO Rest_Tables VALUES(7, 'not available', 'Detroit');
+INSERT INTO Rest_Tables VALUES(9, 'not available', 'Detroit');
+INSERT INTO Rest_Tables VALUES(13, 'available', 'Detroit');
+
+-------------------------------------------------------------------------------
+
+CREATE TABLE Reservation(
+Reservation_Num INT PRIMARY KEY NOT NULL,
+partySize INT,
+Time VARCHAR(20),
+location VARCHAR(50),
+reserve_date VARCHAR(15)
+rest_table INT,
+);
+
+//done
+
+INSERT INTO Reservation VALUES (321, 1, '1:00pm', 'Ann Arbor','2022-06-22', 12);
+
+INSERT INTO Reservation VALUES (123 , 8, '3:00pm', 'Ann Arbor', '2022-04-03',6);
+
+INSERT INTO Reservation VALUES (456 , 1, '2:00pm', 'Ann Arbor', '2022-06-04',11);
+
+INSERT INTO Reservation VALUES (789 , 4, '7:00pm', 'Ann Arbor', '2022-03-21',8);
+
+INSERT INTO Reservation VALUES (555 , 5, '3:00pm', 'Dearborn', '2022-04-01',1);
+
+INSERT INTO Reservation VALUES (222, 2, '5:30pm', 'Dearborn', '2022-04-12',3);
+
+INSERT INTO Reservation VALUES (445 ,1 , '6:00pm', 'Dearborn', '2022-04-06',5);
+
+INSERT INTO Reservation VALUES (667 ,7 , '8:45pm', 'Detroit', '2022-04-03',4);
+
+INSERT INTO Reservation VALUES (688 , 8, '3:00pm', 'Detroit', '2022-05-12',7);
+
+INSERT INTO Reservation VALUES (336 ,4 , '7:00pm', 'Detroit', '2022-03-11',8);
+
+------------------------------------------------------------------------------------
+
+CREATE TABLE Daily_sales(
+Rest_Num INT PRIMARY KEY NOT NULL,
+location VARCHAR(50),
+saleDate VARCHAR(15),
+daily_total FLOAT,
+
+FOREIGN KEY(Rest_Num) REFERENCES Locations(RestaurantNum)
+);
+
+//done
+
+INSERT INTO Daily_sales VALUES (343, 'Ann Arbor', '2022-06-22', 5600.00);
+
+INSERT INTO Daily_sales VALUES (765, 'Dearborn', '2022-06-22',4000.00);
+
+INSERT INTO Daily_sales VALUES (082, 'Detroit', '2022-06-22', 3800.00);
